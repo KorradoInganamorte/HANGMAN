@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HANGMAN</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+  </head>
+  <body>
+    <div id="app" class="h-screen flex flex-col justify-center items-center dark:text-white dark:bg-zinc-800">
+      <div class="absolute top-6 right-7">
+        <div class="flex items-center">
+          <label class="text-sm text-gray-500 mr-3 dark:text-gray-400">Light</label>
+          <input id="toggleDarkMode" type="checkbox" class="relative shrink-0 w-[3.25rem] h-7 bg-slate-300 checked:bg-none border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 border border-transparent ring-1 ring-transparent ring-offset-white focus:outline-none appearance-none dark:bg-gray-700 dark:checked:bg-yellow-500 dark:focus:ring-offset-gray-800
+          before:inline-block before:w-6 before:h-6 before:bg-white checked:before:bg-blue-200 before:translate-x-0 checked:before:translate-x-full before:shadow before:rounded-full before:transform before:ring-0 before:transition before:ease-in-out before:duration-200 dark:before:bg-gray-400 dark:checked:before:bg-blue-200">
+          <label class="text-sm text-gray-500 ml-3 dark:text-gray-400">Dark</label>
+        </div>
+      </div>
+      <h1 id="logo" class="text-2xl sm:text-2xl md:text-4xl lg:text-5xl font-bold">[ HANGMAN GAME ]</h1>
+      <div id="game" class="flex flex-col mt-10 items-center">
+        <button id="startGame" class="bg-slate-300 hover:bg-emerald-400 rounded-md font-medium px-10 py-2 dark:bg-yellow-500 dark:hover:bg-yellow-600">Start Game</button>
+      </div>
+    </div>
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
